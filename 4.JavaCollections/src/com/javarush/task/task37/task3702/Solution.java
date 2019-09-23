@@ -1,18 +1,18 @@
 package com.javarush.task.task37.task3702;
 
-import com.javarush.task.task37.task3702.male.MaleFactory;
-
 public class Solution {
-
     public static void main(String[] args) {
-        MaleFactory mF = new MaleFactory();
-        Human h1 = mF.getPerson(99);
-        Human h2 = mF.getPerson(4);
-        Human h3 = mF.getPerson(15);
+        AbstractFactory factory = FactoryProducer.getFactory(FactoryProducer.HumanFactoryType.FEMALE);
+        useFactory(factory);
 
-        System.out.println(h1);
-        System.out.println(h2);
-        System.out.println(h3);
+        factory = FactoryProducer.getFactory(FactoryProducer.HumanFactoryType.MALE);
+        useFactory(factory);
+    }
+
+    public static void useFactory(AbstractFactory factory) {
+        System.out.println(factory.getPerson(99));
+        System.out.println(factory.getPerson(4));
+        System.out.println(factory.getPerson(15));
     }
 
 }

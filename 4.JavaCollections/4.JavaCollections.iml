@@ -10,7 +10,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../../jackson/jackson-annotations-2.9.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../lib/slf4j-api-1.7.23.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -19,7 +19,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../../jackson/jackson-core-2.9.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../lib/jackson-annotations-2.6.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -28,12 +28,20 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../../jackson/jackson-databind-2.9.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../lib/jackson-core-2.6.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="org.slf4j:slf4j-api:1.7.23" level="application" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../lib/jackson-databind-2.6.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
